@@ -62,11 +62,11 @@ namespace SocketClient
             //對於 server 的 socket 改用 ProxySocket 來建立
             var server = new ProxySocket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             //指定 proxy 的 endpoint
-            var proxy = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 33080);
+            var proxy = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 33081);
             //將上述的 proxy endpoint 設定給 ProxySocket
             server.ProxyEndPoint = proxy;
             //指定 ProxySocket 使用的 proxy 類型
-            server.ProxyType = ProxyTypes.Https;
+            server.ProxyType = ProxyTypes.Socks5;
 
             var ipEndpoint = new IPEndPoint(IPAddress.Parse("192.168.80.3"), 9050);
             
