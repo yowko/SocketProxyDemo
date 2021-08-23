@@ -66,7 +66,7 @@ namespace SocketClient
             //將上述的 proxy endpoint 設定給 ProxySocket
             server.ProxyEndPoint = proxy;
             //指定 ProxySocket 使用的 proxy 類型
-            server.ProxyType = ProxyTypes.Socks5;
+            server.ProxyType = ProxyTypes.None;
 
             var ipEndpoint = new IPEndPoint(IPAddress.Parse("192.168.80.3"), 9050);
             
