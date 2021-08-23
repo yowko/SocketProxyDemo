@@ -56,7 +56,7 @@ namespace SocketServer
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            var ipEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9050);
+            var ipEndPoint = new IPEndPoint(IPAddress.Parse("192.168.80.3"), 9050);
 
             var newSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 

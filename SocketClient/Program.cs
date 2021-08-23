@@ -60,7 +60,7 @@ namespace SocketClient
             var data = new byte[1024];
             var server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            var ipEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9050);
+            var ipEndpoint = new IPEndPoint(IPAddress.Parse("192.168.80.3"), 9050);
             
             try
             {
